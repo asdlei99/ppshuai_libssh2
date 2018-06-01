@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\sftp_append.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{978FE5E2-93C1-32EC-A2BD-671EE39AE9A2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

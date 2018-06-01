@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{36CF6EC0-DE2E-356F-95BF-BABAF34EF806}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>copy_test_dependencies</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E copy "C:/Program Files/Git/mingw64/bin/libeay32.dll" D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E copy "C:/Program Files/Git/mingw64/bin/ssleay32.dll" D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E copy "C:/Program Files/Git/mingw64/bin/libeay32.dll" D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E copy "C:/Program Files/Git/mingw64/bin/ssleay32.dll" D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E copy "C:/Program Files/Git/mingw64/bin/libeay32.dll" D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E copy "C:/Program Files/Git/mingw64/bin/ssleay32.dll" D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E copy "C:/Program Files/Git/mingw64/bin/libeay32.dll" D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E copy "C:/Program Files/Git/mingw64/bin/ssleay32.dll" D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E copy "C:/Program Files/Git/mingw64/bin/libeay32.dll" D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E copy "C:/Program Files/Git/mingw64/bin/ssleay32.dll" D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E copy "C:/Program Files/Git/mingw64/bin/libeay32.dll" D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E copy "C:/Program Files/Git/mingw64/bin/ssleay32.dll" D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E copy "C:/Program Files/Git/mingw64/bin/libeay32.dll" D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E copy "C:/Program Files/Git/mingw64/bin/ssleay32.dll" D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E copy "C:/Program Files/Git/mingw64/bin/libeay32.dll" D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E copy "C:/Program Files/Git/mingw64/bin/ssleay32.dll" D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFiles.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BundleUtilities.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GetPrerequisites.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\CopyRuntimeDependencies.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\SocketLibraries.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\libssh2_config_cmake.h.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFiles.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BundleUtilities.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GetPrerequisites.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\CopyRuntimeDependencies.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\SocketLibraries.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\libssh2_config_cmake.h.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFiles.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BundleUtilities.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GetPrerequisites.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\CopyRuntimeDependencies.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\SocketLibraries.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\libssh2_config_cmake.h.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFiles.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BundleUtilities.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GetPrerequisites.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\CopyRuntimeDependencies.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\SocketLibraries.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\libssh2_config_cmake.h.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFiles.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BundleUtilities.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GetPrerequisites.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\CopyRuntimeDependencies.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\SocketLibraries.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\libssh2_config_cmake.h.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFiles.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BundleUtilities.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GetPrerequisites.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\CopyRuntimeDependencies.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\SocketLibraries.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\libssh2_config_cmake.h.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFiles.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BundleUtilities.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GetPrerequisites.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\CopyRuntimeDependencies.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\SocketLibraries.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\libssh2_config_cmake.h.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFiles.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BundleUtilities.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GetPrerequisites.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\CopyRuntimeDependencies.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\SocketLibraries.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\libssh2_config_cmake.h.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\ZERO_CHECK.vcxproj">
+      <Project>57B23910-E1A2-3A00-9B8B-F038A5299F35</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

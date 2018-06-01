@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{5C06E370-B975-3E75-B635-79FE7B432284}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>test_public_key_auth_fails_with_wrong_key</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">test_public_key_auth_fails_with_wrong_key.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">test_public_key_auth_fails_with_wrong_key</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test_public_key_auth_fails_with_wrong_key</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">test_public_key_auth_fails_with_wrong_key.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">test_public_key_auth_fails_with_wrong_key</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test_public_key_auth_fails_with_wrong_key</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">test_public_key_auth_fails_with_wrong_key.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">test_public_key_auth_fails_with_wrong_key</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">test_public_key_auth_fails_with_wrong_key</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">test_public_key_auth_fails_with_wrong_key.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">test_public_key_auth_fails_with_wrong_key</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">test_public_key_auth_fails_with_wrong_key</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\src\Debug\libssh2.lib;Debug\runner.lib;ws2_32.lib;Debug\session_fixture.lib;..\src\Debug\libssh2.lib;D:\DevelopmentEnvironment\Workspaces\Sources\openssl-1.0.2k\Output-static-debug\lib\ssleay32.lib;D:\DevelopmentEnvironment\Workspaces\Sources\openssl-1.0.2k\Output-static-debug\lib\libeay32.lib;crypt32.lib;D:\DevelopmentEnvironment\Workspaces\Sources\zlib-1.2.11\Release\zlibstatic.lib;Debug\openssh_fixture.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/Debug/test_public_key_auth_fails_with_wrong_key.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/Debug/test_public_key_auth_fails_with_wrong_key.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\src\Debug\libssh2.lib;Debug\runner.lib;ws2_32.lib;Debug\session_fixture.lib;..\src\Debug\libssh2.lib;D:\DevelopmentEnvironment\Workspaces\Sources\openssl-1.0.2k\Output-static-debug\lib\ssleay32.lib;D:\DevelopmentEnvironment\Workspaces\Sources\openssl-1.0.2k\Output-static-debug\lib\libeay32.lib;crypt32.lib;D:\DevelopmentEnvironment\Workspaces\Sources\zlib-1.2.11\Release\zlibstatic.lib;Debug\openssh_fixture.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/Debug/test_public_key_auth_fails_with_wrong_key.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/Debug/test_public_key_auth_fails_with_wrong_key.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\src\Release\libssh2.lib;Release\runner.lib;ws2_32.lib;Release\session_fixture.lib;..\src\Release\libssh2.lib;D:\DevelopmentEnvironment\Workspaces\Sources\openssl-1.0.2k\Output-static-release\lib\ssleay32.lib;D:\DevelopmentEnvironment\Workspaces\Sources\openssl-1.0.2k\Output-static-release\lib\libeay32.lib;crypt32.lib;D:\DevelopmentEnvironment\Workspaces\Sources\zlib-1.2.11\Release\zlibstatic.lib;Release\openssh_fixture.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/Release/test_public_key_auth_fails_with_wrong_key.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/Release/test_public_key_auth_fails_with_wrong_key.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\src\Release\libssh2.lib;Release\runner.lib;ws2_32.lib;Release\session_fixture.lib;..\src\Release\libssh2.lib;D:\DevelopmentEnvironment\Workspaces\Sources\openssl-1.0.2k\Output-static-release\lib\ssleay32.lib;D:\DevelopmentEnvironment\Workspaces\Sources\openssl-1.0.2k\Output-static-release\lib\libeay32.lib;crypt32.lib;D:\DevelopmentEnvironment\Workspaces\Sources\zlib-1.2.11\Release\zlibstatic.lib;Release\openssh_fixture.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/Release/test_public_key_auth_fails_with_wrong_key.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/Release/test_public_key_auth_fails_with_wrong_key.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\src\MinSizeRel\libssh2.lib;MinSizeRel\runner.lib;ws2_32.lib;MinSizeRel\session_fixture.lib;..\src\MinSizeRel\libssh2.lib;D:\DevelopmentEnvironment\Workspaces\Sources\openssl-1.0.2k\Output-static-release\lib\ssleay32.lib;D:\DevelopmentEnvironment\Workspaces\Sources\openssl-1.0.2k\Output-static-release\lib\libeay32.lib;crypt32.lib;D:\DevelopmentEnvironment\Workspaces\Sources\zlib-1.2.11\Release\zlibstatic.lib;MinSizeRel\openssh_fixture.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/MinSizeRel/test_public_key_auth_fails_with_wrong_key.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/MinSizeRel/test_public_key_auth_fails_with_wrong_key.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\src\MinSizeRel\libssh2.lib;MinSizeRel\runner.lib;ws2_32.lib;MinSizeRel\session_fixture.lib;..\src\MinSizeRel\libssh2.lib;D:\DevelopmentEnvironment\Workspaces\Sources\openssl-1.0.2k\Output-static-release\lib\ssleay32.lib;D:\DevelopmentEnvironment\Workspaces\Sources\openssl-1.0.2k\Output-static-release\lib\libeay32.lib;crypt32.lib;D:\DevelopmentEnvironment\Workspaces\Sources\zlib-1.2.11\Release\zlibstatic.lib;MinSizeRel\openssh_fixture.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/MinSizeRel/test_public_key_auth_fails_with_wrong_key.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/MinSizeRel/test_public_key_auth_fails_with_wrong_key.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\src\RelWithDebInfo\libssh2.lib;RelWithDebInfo\runner.lib;ws2_32.lib;RelWithDebInfo\session_fixture.lib;..\src\RelWithDebInfo\libssh2.lib;D:\DevelopmentEnvironment\Workspaces\Sources\openssl-1.0.2k\Output-static-release\lib\ssleay32.lib;D:\DevelopmentEnvironment\Workspaces\Sources\openssl-1.0.2k\Output-static-release\lib\libeay32.lib;crypt32.lib;D:\DevelopmentEnvironment\Workspaces\Sources\zlib-1.2.11\Release\zlibstatic.lib;RelWithDebInfo\openssh_fixture.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/RelWithDebInfo/test_public_key_auth_fails_with_wrong_key.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/RelWithDebInfo/test_public_key_auth_fails_with_wrong_key.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\src\RelWithDebInfo\libssh2.lib;RelWithDebInfo\runner.lib;ws2_32.lib;RelWithDebInfo\session_fixture.lib;..\src\RelWithDebInfo\libssh2.lib;D:\DevelopmentEnvironment\Workspaces\Sources\openssl-1.0.2k\Output-static-release\lib\ssleay32.lib;D:\DevelopmentEnvironment\Workspaces\Sources\openssl-1.0.2k\Output-static-release\lib\libeay32.lib;crypt32.lib;D:\DevelopmentEnvironment\Workspaces\Sources\zlib-1.2.11\Release\zlibstatic.lib;RelWithDebInfo\openssh_fixture.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/RelWithDebInfo/test_public_key_auth_fails_with_wrong_key.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/RelWithDebInfo/test_public_key_auth_fails_with_wrong_key.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFiles.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BundleUtilities.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GetPrerequisites.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\CopyRuntimeDependencies.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\SocketLibraries.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\libssh2_config_cmake.h.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFiles.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BundleUtilities.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GetPrerequisites.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\CopyRuntimeDependencies.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\SocketLibraries.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\libssh2_config_cmake.h.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFiles.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BundleUtilities.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GetPrerequisites.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\CopyRuntimeDependencies.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\SocketLibraries.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\libssh2_config_cmake.h.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFiles.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BundleUtilities.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GetPrerequisites.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\CopyRuntimeDependencies.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\SocketLibraries.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\libssh2_config_cmake.h.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFiles.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BundleUtilities.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GetPrerequisites.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\CopyRuntimeDependencies.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\SocketLibraries.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\libssh2_config_cmake.h.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFiles.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BundleUtilities.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GetPrerequisites.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\CopyRuntimeDependencies.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\SocketLibraries.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\libssh2_config_cmake.h.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFiles.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BundleUtilities.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GetPrerequisites.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\CopyRuntimeDependencies.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\SocketLibraries.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\libssh2_config_cmake.h.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/tests/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFiles.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BundleUtilities.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GetPrerequisites.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\CopyRuntimeDependencies.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\SocketLibraries.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\libssh2_config_cmake.h.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\test_public_key_auth_fails_with_wrong_key.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\ZERO_CHECK.vcxproj">
+      <Project>57B23910-E1A2-3A00-9B8B-F038A5299F35</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\copy_test_dependencies.vcxproj">
+      <Project>36CF6EC0-DE2E-356F-95BF-BABAF34EF806</Project>
+      <Name>copy_test_dependencies</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\src\libssh2.vcxproj">
+      <Project>7B584882-3DE8-3902-BBCB-298AD9870FE5</Project>
+      <Name>libssh2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\openssh_fixture.vcxproj">
+      <Project>0F019C74-3FDA-3829-A34D-08E05574E344</Project>
+      <Name>openssh_fixture</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\runner.vcxproj">
+      <Project>063EC1AF-BC02-3904-80C0-C3DFB5B94C2D</Project>
+      <Name>runner</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\session_fixture.vcxproj">
+      <Project>7C7023C1-94C4-3878-9BCF-7F46EA587BE6</Project>
+      <Name>session_fixture</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

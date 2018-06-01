@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include=".\openssl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\agent.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\channel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\comp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\crypt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\global.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\hostkey.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\keepalive.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\kex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\knownhost.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\mac.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\misc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\packet.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\pem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\publickey.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\scp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\session.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\sftp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\transport.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\userauth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\version.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include=".\openssl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\comp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\crypto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\libssh2_priv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\packet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\sftp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\transport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\userauth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{978FE5E2-93C1-32EC-A2BD-671EE39AE9A2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5D62C148-C134-3EA5-89EC-5C7611B553EB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

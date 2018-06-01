@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{AD0CB596-52E2-391A-9465-066D595942E5}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeRCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\max_warnings.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FeatureSummary.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CPack.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CPackComponent.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Templates\CPackConfig.cmake.in;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Templates\CPackConfig.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeRCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\max_warnings.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FeatureSummary.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CPack.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CPackComponent.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Templates\CPackConfig.cmake.in;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Templates\CPackConfig.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeRCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\max_warnings.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FeatureSummary.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CPack.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CPackComponent.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Templates\CPackConfig.cmake.in;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Templates\CPackConfig.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeRCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\max_warnings.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FeatureSummary.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CPack.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CPackComponent.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Templates\CPackConfig.cmake.in;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Templates\CPackConfig.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeRCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\max_warnings.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FeatureSummary.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CPack.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CPackComponent.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Templates\CPackConfig.cmake.in;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Templates\CPackConfig.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeRCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\max_warnings.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FeatureSummary.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CPack.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CPackComponent.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Templates\CPackConfig.cmake.in;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Templates\CPackConfig.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 -BD:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0 --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeRCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\max_warnings.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FeatureSummary.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CPack.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CPackComponent.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Templates\CPackConfig.cmake.in;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Templates\CPackConfig.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/DevelopmentEnvironment/Workspaces/Sources/libssh2-1.8.0/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\3.8.0-rc1\CMakeRCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\cmake\max_warnings.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FeatureSummary.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CPack.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CPackComponent.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Templates\CPackConfig.cmake.in;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Templates\CPackConfig.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\ZERO_CHECK.vcxproj">
+      <Project>57B23910-E1A2-3A00-9B8B-F038A5299F35</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-direct_tcpip.vcxproj">
+      <Project>4B9607A7-1F13-347D-8A82-AE537B3E7471</Project>
+      <Name>example-direct_tcpip</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-scp.vcxproj">
+      <Project>AA1609C5-87AC-34CC-B4E5-1B2EC9EC2E0C</Project>
+      <Name>example-scp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-scp_nonblock.vcxproj">
+      <Project>022C842C-9617-32C5-AA05-63C7DDC30883</Project>
+      <Name>example-scp_nonblock</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-scp_write.vcxproj">
+      <Project>F3694136-F6BE-3F69-BEC5-5E75E77DEB9A</Project>
+      <Name>example-scp_write</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-scp_write_nonblock.vcxproj">
+      <Project>2B330E3F-DA0F-36E4-8D09-2A09B4671F0D</Project>
+      <Name>example-scp_write_nonblock</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-sftp.vcxproj">
+      <Project>35458F27-551A-3F7D-B717-094D91109401</Project>
+      <Name>example-sftp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-sftp_RW_nonblock.vcxproj">
+      <Project>F258AE11-8654-3A51-A47D-E01F34885BD7</Project>
+      <Name>example-sftp_RW_nonblock</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-sftp_append.vcxproj">
+      <Project>662AC59B-5603-3652-8D7C-FDC5CC94865B</Project>
+      <Name>example-sftp_append</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-sftp_mkdir.vcxproj">
+      <Project>17F2F71F-1216-3098-97BD-F1684C9957BB</Project>
+      <Name>example-sftp_mkdir</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-sftp_mkdir_nonblock.vcxproj">
+      <Project>C26B780D-9176-3D22-97F8-C237C02A72EC</Project>
+      <Name>example-sftp_mkdir_nonblock</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-sftp_nonblock.vcxproj">
+      <Project>31E967A9-BB8C-3771-A5A6-5B89E24D1AC8</Project>
+      <Name>example-sftp_nonblock</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-sftp_write.vcxproj">
+      <Project>34DDE361-1167-34B4-82DA-F6C5E087E1B8</Project>
+      <Name>example-sftp_write</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-sftp_write_nonblock.vcxproj">
+      <Project>210C7771-72FB-3A6D-B1BC-4972D4272F58</Project>
+      <Name>example-sftp_write_nonblock</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-sftp_write_sliding.vcxproj">
+      <Project>F34C0FAB-67AF-3A49-81BF-32CA5886B872</Project>
+      <Name>example-sftp_write_sliding</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-sftpdir.vcxproj">
+      <Project>B86230C2-15AA-3A68-81D4-5DEE15CD20E2</Project>
+      <Name>example-sftpdir</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-sftpdir_nonblock.vcxproj">
+      <Project>71E93AFE-A59B-310F-849B-2496F670EFA2</Project>
+      <Name>example-sftpdir_nonblock</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-ssh2.vcxproj">
+      <Project>A6DA5A5C-D2A5-3FB7-8602-489DA2FC7D13</Project>
+      <Name>example-ssh2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-ssh2_agent.vcxproj">
+      <Project>9A5FB5F7-AE31-3D7C-8F95-2BB4C1092EE2</Project>
+      <Name>example-ssh2_agent</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-ssh2_echo.vcxproj">
+      <Project>E6769A91-B0F4-3A06-8796-58A62616A960</Project>
+      <Name>example-ssh2_echo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-ssh2_exec.vcxproj">
+      <Project>8EBDF8E8-3637-398E-B46A-84E6F47240DC</Project>
+      <Name>example-ssh2_exec</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-subsystem_netconf.vcxproj">
+      <Project>DE18A794-E660-3EF3-A2D6-835C7098A0DC</Project>
+      <Name>example-subsystem_netconf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\example\example-tcpip-forward.vcxproj">
+      <Project>9CBD1E18-4B34-383B-9160-DE61700F0B47</Project>
+      <Name>example-tcpip-forward</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\src\libssh2.vcxproj">
+      <Project>7B584882-3DE8-3902-BBCB-298AD9870FE5</Project>
+      <Name>libssh2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\openssh_fixture.vcxproj">
+      <Project>0F019C74-3FDA-3829-A34D-08E05574E344</Project>
+      <Name>openssh_fixture</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\runner.vcxproj">
+      <Project>063EC1AF-BC02-3904-80C0-C3DFB5B94C2D</Project>
+      <Name>runner</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\session_fixture.vcxproj">
+      <Project>7C7023C1-94C4-3878-9BCF-7F46EA587BE6</Project>
+      <Name>session_fixture</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\test_hostkey.vcxproj">
+      <Project>1F82183B-C092-3B07-9C96-483DDC874C1F</Project>
+      <Name>test_hostkey</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\test_hostkey_hash.vcxproj">
+      <Project>6C051B53-FBB6-3AF9-B620-11B29F4ABD20</Project>
+      <Name>test_hostkey_hash</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\test_keyboard_interactive_auth_fails_with_wrong_response.vcxproj">
+      <Project>6AEB12BE-DC19-3827-A1F7-E511D0102E08</Project>
+      <Name>test_keyboard_interactive_auth_fails_with_wrong_response</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\test_keyboard_interactive_auth_succeeds_with_correct_response.vcxproj">
+      <Project>D4A9976E-42C5-35B3-8308-96F2B96DE767</Project>
+      <Name>test_keyboard_interactive_auth_succeeds_with_correct_response</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\test_password_auth_fails_with_wrong_password.vcxproj">
+      <Project>F6F549C4-5845-3C9B-AC2E-B38AFD14DDE7</Project>
+      <Name>test_password_auth_fails_with_wrong_password</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\test_password_auth_fails_with_wrong_username.vcxproj">
+      <Project>B9C38494-0B37-33FC-BBE0-DABBE2DD3580</Project>
+      <Name>test_password_auth_fails_with_wrong_username</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\test_password_auth_succeeds_with_correct_credentials.vcxproj">
+      <Project>EE637FB2-3082-3201-96A3-1AEE4373ECF7</Project>
+      <Name>test_password_auth_succeeds_with_correct_credentials</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\test_public_key_auth_fails_with_wrong_key.vcxproj">
+      <Project>5C06E370-B975-3E75-B635-79FE7B432284</Project>
+      <Name>test_public_key_auth_fails_with_wrong_key</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\test_public_key_auth_succeeds_with_correct_dsa_key.vcxproj">
+      <Project>29E80CCE-D525-3D59-8FEF-320798280D8F</Project>
+      <Name>test_public_key_auth_succeeds_with_correct_dsa_key</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\DevelopmentEnvironment\Workspaces\Sources\libssh2-1.8.0\tests\test_public_key_auth_succeeds_with_correct_rsa_key.vcxproj">
+      <Project>77F18B02-C9CF-3A84-B807-9041B48314B2</Project>
+      <Name>test_public_key_auth_succeeds_with_correct_rsa_key</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
